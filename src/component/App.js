@@ -1,5 +1,7 @@
 import "../App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HabitList from "./HabitList";
 import CreateHabit from "./CreateHabit";
