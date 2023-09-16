@@ -2,7 +2,7 @@
   "homepage": "https://ravibarla.github.io/habit-tracker-4/",
   "name": "habit-tracker-4",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
