@@ -1,5 +1,4 @@
 import "../App.css";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,7 +9,7 @@ import Page404 from "./Page404"
 function App() {
   return (
     <div className="App d-flex justify-content-center ">
-      <Router basename="/habit-tracker-4">
+      <Router basename="/">
         <Routes>
           <Route exact path="/" element={<HabitList />} />
           <Route exact path="tracker/:habitId" element={<HabitTracker />} />

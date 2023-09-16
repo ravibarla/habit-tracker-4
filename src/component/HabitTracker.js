@@ -5,16 +5,23 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { removeHabit } from "../redux/habitSlice";
 const HabitTracker = (props) => {
+  //getting the habit id
   const { habitId } = useParams();
+  //fetching the data from the redux store
   const habits = useSelector((state) => state.habits);
+  //filtering the habit based on the habit id
   const selectedHabit = habits.filter((habit) => habit.id == habitId);
 
   const dispatch = useDispatch();
 
   // debugger;
   const navigate = useNavigate();
+
+  //remove habit handler
   const removeHabitHandle = () => {
+    //dispactching the remove action
     dispatch(removeHabit(habitId));
+    //redirect to previous page
     navigate(-1);
   };
   return (
@@ -22,6 +29,7 @@ const HabitTracker = (props) => {
       {selectedHabit.length > 0 && (
         <>
           <Heading heading={selectedHabit[0].name} />
+          {/* to render all the updatehistory with its status */}
           <div className="d-flex justify-content-center">
             {selectedHabit[0].updateHistory.map((data, i) => (
               <HistoryCard data={data} />

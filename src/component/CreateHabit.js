@@ -4,7 +4,6 @@ import { v4 as uuid } from "uuid";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addHabit } from "../redux/habitSlice";
-// import { useDispatch } from "rea";
 const CreateHabit = (props) => {
   const uniqueId = uuid();
   const [heading] = useState("Create Habit :");

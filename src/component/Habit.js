@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Rating from "./Rating";
 import RatingFraction from "./RatingFraction";
 const Habit = (props) => {
+  //destructuring habit passsed as props
   const { habit } = props;
 
   const navigate = useNavigate();
@@ -11,8 +12,11 @@ const Habit = (props) => {
       onClick={() => navigate(`tracker/${habit.id}`)}
     >
       <div className="text-md-end justify-content-center">{habit.name}</div>
+      {/* to render the ratings in icons*/}
       <Rating updateHistory={habit.updateHistory} />
+      {/* to render the rating in fractyion */}
       <RatingFraction updateHistory={habit.updateHistory} />
+
       <div className="">weekly</div>
     </div>
   );

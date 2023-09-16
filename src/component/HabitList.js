@@ -10,6 +10,7 @@ const HabitList = (props) => {
   return (
     <div>
       <Heading heading={heading} />
+      {/* mapping every habits and passing each habit as props*/}
       {habitList.map((habit, i) => (
         <Habit habit={habit} key={i} />
       ))}
