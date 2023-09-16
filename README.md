@@ -63,8 +63,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### `Description :-`
+
+
+This is a react app named "habit-Tracker-4" to display and perform varous CRUD operations.
+
+### `functionality :-`
+
+1. View all the habits 
+2. create a new habits
+3. . View detailed habit with its past status
+4. update the status of any days 
+
+### `built using :-`
+
+1. react js
+2. redux-toolkit
+3. css
+4. html
+5. bootstrap
+6. fontawsome
+7. react router dom
+
+### `live website :-`
+
+https://ravibarla.github.io/habit-tracker-4/
