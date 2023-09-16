@@ -10,7 +10,7 @@ import Page404 from "./Page404"
 function App() {
   return (
     <div className="App d-flex justify-content-center ">
-      <Router>
+      <Router basename="/habit-tracker-4">
         <Routes>
           <Route exact path="/" element={<HabitList />} />
           <Route exact path="tracker/:habitId" element={<HabitTracker />} />
