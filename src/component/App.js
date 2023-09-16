@@ -12,7 +12,7 @@ function App() {
     <div className="App d-flex justify-content-center ">
       <Router basename="/habit-tracker-4">
         <Routes>
-          <Route exact path="/" element={<HabitList />} />
+          <Route exact path="/habit-tracker-4" element={<HabitList />} />
           <Route exact path="tracker/:habitId" element={<HabitTracker />} />
           <Route exact path="create" element={<CreateHabit />} />
           <Route path="*" element={<Page404/>}/>
