@@ -71,11 +71,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+### `Title :-` 
+# Habit-Tracker-App
 
 ### `Description :-`
 
 
 This is a react app named "habit-Tracker-4" to display and perform varous CRUD operations.
+
+### `live Demo :-`
+
+https://ravibarla.github.io/habit-tracker-4/
 
 ### `functionality :-`
 
@@ -94,6 +100,41 @@ This is a react app named "habit-Tracker-4" to display and perform varous CRUD o
 6. fontawsome
 7. react router dom
 
-### `live website :-`
+## Tech
 
-https://ravibarla.github.io/habit-tracker-4/
+Dillinger uses a number of open source projects to work properly:
+
+- [HTML] 
+- [CSS] 
+- [JQuery] 
+- [JavaScript] 
+- [bootstrap]
+
+
+
+## Plugins
+
+Instructions on how to use them in your own application are linked below.
+
+| Plugin | README |
+| ------ | ------ |
+| GitHub | [plugins/github/README.md]
+
+
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+
+   [HTML]:<https://developer.mozilla.org/en-US/docs/Web/HTML>
+   [CSS]:<https://developer.mozilla.org/en-US/docs/Learn/CSS>
+   [jQuery]: <http://jquery.com>
+   [JavaScript]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript>
+   [bootstrap]: <https://getbootstrap.com/>
+   [fontawsome]: <https://fontawesome.com/docs/apis/>
+   [react-js]: <https://react.dev/>
+   [redux-toolkit]: <https://github.com/rahsheen/expo-template-redux-typescript>
+   [react-router-dom]: <https://github.com/remix-run/react-router/tree/dev/examples>
+
+
+
+
