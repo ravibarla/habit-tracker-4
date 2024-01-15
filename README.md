@@ -146,11 +146,11 @@ Instructions on how to use them in your own application are linked below.
    
    - Home page
    
-![Alt text](home-page.png )
+![Alt text](home.png )
 
 - Create Activity page
-![Alt text](movie-page.png )
+![Alt text](create.png )
   
 
 -  Update Activity page
-![Alt text](favourite-page.png)
+![Alt text](todo-item.png)
