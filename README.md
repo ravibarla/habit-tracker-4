@@ -109,6 +109,10 @@ Dillinger uses a number of open source projects to work properly:
 - [JQuery] 
 - [JavaScript] 
 - [bootstrap]
+- [fontawsome]
+- [react-js]
+- [redux-toolkit]
+- [react-router-dom]
 
 
 
@@ -132,9 +136,21 @@ Instructions on how to use them in your own application are linked below.
    [bootstrap]: <https://getbootstrap.com/>
    [fontawsome]: <https://fontawesome.com/docs/apis/>
    [react-js]: <https://react.dev/>
-   [redux-toolkit]: <https://github.com/rahsheen/expo-template-redux-typescript>
-   [react-router-dom]: <https://github.com/remix-run/react-router/tree/dev/examples>
+   [redux-toolkit]: <https://redux-toolkit.js.org/>
+   [react-router-dom]: <https://reactrouter.com/>
 
 
 
 
+## Screenshots
+   
+   - Home page
+   
+![Alt text](home-page.png )
+
+- Create Activity page
+![Alt text](movie-page.png )
+  
+
+-  Update Activity page
+![Alt text](favourite-page.png)
