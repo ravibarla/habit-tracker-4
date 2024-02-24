@@ -19,7 +19,7 @@ const HabitList = (props) => {
       <button
         onClick={() => navigate("create")}
         type="button"
-        class="btn btn-secondary"
+        class="btn btn-secondary btn-lg"
       >
         Create
       </button>
