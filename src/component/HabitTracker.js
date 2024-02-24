@@ -3,7 +3,7 @@ import Heading from "./Heading";
 import HistoryCard from "./HistoryCard";
 import { useSelector, useDispatch } from "react-redux";
 
-import { removeHabit } from "../redux/habitSlice";
+// import { removeHabit } from "../redux/habitSlice";
 const HabitTracker = (props) => {
   //getting the habit id
   const { habitId } = useParams();
@@ -18,12 +18,12 @@ const HabitTracker = (props) => {
   const navigate = useNavigate();
 
   //remove habit handler
-  const removeHabitHandle = () => {
-    //dispactching the remove action
-    dispatch(removeHabit(habitId));
-    //redirect to previous page
-    navigate(-1);
-  };
+  // const removeHabitHandle = () => {
+  //   //dispactching the remove action
+  //   dispatch(removeHabit(habitId));
+  //   //redirect to previous page
+  //   navigate(-1);
+  // };
   return (
     <div>
       {selectedHabit.length > 0 && (
@@ -42,13 +42,13 @@ const HabitTracker = (props) => {
           >
             back
           </button>
-          <button
+          {/* <button
             onClick={() => removeHabitHandle()}
             type="button"
             className="btn btn-danger rounded d-inline-flex justify-content-center m-2 p-2"
           >
             Remove
-          </button>
+          </button> */}
         </>
       )}
     </div>

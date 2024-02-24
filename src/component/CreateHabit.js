@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Heading from "./Heading";
 import { v4 as uuid } from "uuid";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addHabit } from "../redux/habitSlice";
 const CreateHabit = (props) => {
@@ -12,7 +12,7 @@ const CreateHabit = (props) => {
   const dispatch = useDispatch();
   function getPreviousDay(date) {
     const currentDate = new Date(date);
-    currentDate.setDate(currentDate.getDate() - 1);
+    currentDate.setDate(currentDate.getDate());
     const year = currentDate.getFullYear();
     const month = String(currentDate.getMonth() + 1).padStart(2, "0");
     const day = String(currentDate.getDate()).padStart(2, "0");
@@ -21,8 +21,9 @@ const CreateHabit = (props) => {
 
   const handleForm = (e) => {
     e.preventDefault();
-    if (name === "enter a new habit:") {
+    if (name === "enter a new habit:" || name.toString().trim().length === 0) {
       alert("empty input");
+      return;
     }
     const newSubArray = [];
     const currentDate = new Date();
@@ -53,7 +54,16 @@ const CreateHabit = (props) => {
           onChange={(e) => setName(e.target.value)}
           type="text"
         />
-        <button className="btn btn-primary m-2">ADD</button>
+        <button className="btn btn-primary m-2" type="submit">
+          ADD
+        </button>
+        <button
+          className="btn btn-secondary m-2"
+          onClick={() => navigate(-1)}
+          type="button"
+        >
+          BACK
+        </button>
       </form>
     </div>
   );

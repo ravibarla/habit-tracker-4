@@ -14,8 +14,18 @@ export const habitSlice = createSlice({
     updateHabit: (state, action) => {
       return action.payload;
     },
+    updateHabitName: (state, action) => {
+      const { id, name } = action.payload;
+      const habitIndex = state.findIndex((habit) => habit.id == id);
+      if (habitIndex !== -1) {
+        // Create a new copy of the habit with the updated name
+        console.log("hii")
+        return (state[habitIndex] = { ...state[habitIndex], name });
+      }
+    },
   },
 });
 
-export const { addHabit, removeHabit, updateHabit } = habitSlice.actions;
+export const { addHabit, removeHabit, updateHabit, updateHabitName } =
+  habitSlice.actions;
 export default habitSlice.reducer;

@@ -8,12 +8,14 @@ const HabitList = (props) => {
   const navigate = useNavigate();
   const [heading] = useState("Activity List");
   return (
-    <div>
+    <div >
       <Heading heading={heading} />
       {/* mapping every habits and passing each habit as props*/}
-      {habitList.map((habit, i) => (
-        <Habit habit={habit} key={i} />
-      ))}
+      <div className="d-flex flex-row h-50 px-2 my-2 mx-2 w-auto">
+        {habitList.map((habit, i) => (
+          <Habit habit={habit} key={i} />
+        ))}
+      </div>
       <button
         onClick={() => navigate("create")}
         type="button"
