@@ -11,7 +11,7 @@ const HabitList = (props) => {
     <div >
       <Heading heading={heading} />
       {/* mapping every habits and passing each habit as props*/}
-      <div className="d-flex flex-row h-50 px-2 my-2 mx-2 w-auto">
+      <div className="d-flex flex-row h-50 px-2 my-2 mx-2 w-auto" style={{fontFamily:"serif"}}>
         {habitList.map((habit, i) => (
           <Habit habit={habit} key={i} />
         ))}
