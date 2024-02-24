@@ -9,7 +9,7 @@ import EditHabit from "./edit";
 import Page404 from "./Page404";
 function App() {
   return (
-    <div className="App d-flex justify-content-center " style={{backgroundColor:"#E3E1D9",height:"100vh"}}>
+    <div className="App d-flex justify-content-center " style={{backgroundColor:"#E3E1D9",height:"100vh",fontFamily:"monospace"}}>
       <Router basename="/">
         <Routes>
           <Route exact path="/" element={<HabitList />} />
