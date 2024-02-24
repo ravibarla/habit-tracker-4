@@ -150,7 +150,9 @@ Instructions on how to use them in your own application are linked below.
 
 - Create Activity page
 ![Alt text](create.png )
-  
+
+- edit Activity page
+![Alt text](edit.png )
 
 -  Update Activity page
-![Alt text](todo-item.png)
+![Alt text](tracking.png)
