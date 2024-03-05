@@ -21,8 +21,8 @@ const Habit = (props) => {
   };
   return (
     <div
-      className="d-flex flex-column  border    rounded-top rounded-bottom rounded-end border-2 m-2 p-4 h-50 "
-      style={{ backgroundColor: "#B4B4B8",borderColor:"#F2EFE5"}}
+      className="d-flex flex-column  border    rounded-top rounded-bottom rounded-end border-2 m-4 p-4 h-50 "
+      style={{ backgroundColor: "#B4B4B8",borderColor:"#F2EFE5",width:"250px"}}
       onClick={() => navigate(`tracker/${habit.id}`)}
     >
       <div
